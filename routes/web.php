@@ -6,13 +6,14 @@ use App\Livewire\Settings\Profile;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AllergeenController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\MagazijnController;
 
 
 Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
-Route::get('/allergeen', [AllergeenController::class, 'index'])->name('allergeen.index');;
+Route::get('/allergeen', [AllergeenController::class, 'index'])->name('allergeen.index');
 
 Route::get('/allergeen/create', [AllergeenController::class, 'create'])->name('allergeen.create');
 
@@ -43,3 +44,5 @@ Route::middleware(['auth'])->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::get('/magazijn', [MagazijnController::class, 'index'])->name('magazijn.index');

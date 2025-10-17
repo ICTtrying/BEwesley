@@ -1,12 +1,13 @@
-@vite(['resources/css/app.css', 'resources/js/app.js']);
+@vite(['resources/css/app.css', 'resources/js/app.js'])
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jamin</title>
+    <title>allergeen</title>
 </head>
 <body>
+    <a href="/">home</a>
     <div class="container d-flex justify-content-center">
 
         <div class="col-md-8">
